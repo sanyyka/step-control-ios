@@ -50,7 +50,7 @@ class DotTextLayer: CATextLayer {
     backgroundColor = stringAndBkgColor.backgroundColor
     foregroundColor = Constants.Colors.foregroundCGColor
     fontSize        = defaultFontSize
-    alignmentMode   = defaultAlignmentMode
+    alignmentMode   = CATextLayerAlignmentMode(rawValue: defaultAlignmentMode)
     cornerRadius    = frame.width / 2.0
   }
 
